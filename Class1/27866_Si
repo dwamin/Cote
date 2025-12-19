@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    char S[1001];
+    int i = 1;
+    cin >> S;
+    cin >> i;
+    cout << S[i - 1];
+}
