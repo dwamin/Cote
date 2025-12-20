@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    int i, j, k;
+    cin >> N;
+
+    for (i = 1; i <= N; i++)
+    {
+        for (j = N - i; j >= 1; j--)
+        {
+            cout << " ";
+        }
+        for (k = N - i; k < N; k++)
+        {
+            cout << "*";
+        }
+        cout << '\n';
+    }
+}
