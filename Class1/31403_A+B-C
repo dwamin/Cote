@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int A, B, C;
+    cin >> A;
+    cin >> B;
+    cin >> C;
+    cout << A + B - C << '\n';
+    string a = to_string(A);
+    string b = to_string(B);
+    long long c = stoll(a + b);
+    cout << c - C;
+}
