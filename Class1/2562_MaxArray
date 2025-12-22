@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int max;
+    int index = 0;
+    int A[9];
+    cin >> A[0];
+    max = A[0];
+    for (int i = 1; i < 9; i++)
+    {
+        cin >> A[i];
+        if (max < A[i])
+        {
+            max = A[i];
+            index = i;
+        }
+    }
+    cout << max << endl;
+    cout << index + 1;
+}
