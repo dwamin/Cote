@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int A, B, C;
+    bool R=1;
+    int max;
+    while (R)
+    {
+        cin >> A >> B >> C;
+        if (A == 0 && B == 0 && C == 0)
+            break;
+        if (A >= B && A >= C)
+        {
+            max = A;
+        }
+        else if (B >= A && B >= C)
+            max = B;
+        else if (C >= A && C >= B)
+            max = C;
+
+        if (2 * max * max == A * A + B * B + C * C)
+        {
+            cout << "right" << '\n';
+        }
+        else
+            cout << "wrong" << '\n';
+    }
+    return 0;
+}
