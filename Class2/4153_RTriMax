@@ -1,0 +1,21 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+int main()
+{
+    int A, B, C;
+    int val_max;
+    bool R = 1;
+    while (R)
+    {
+        cin >> A >> B >> C;
+        if (A == 0 && B == 0 && C == 0)
+            break;
+        val_max = max({A, B, C});
+        if (2 * val_max * val_max == A * A + B * B + C * C)
+            cout << "right" << '\n';
+        else
+            cout << "wrong" << '\n';
+    }
+}
