@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long long int N;
+    cin >> N;
+    // 1번은 1. 1개
+    // 2번부터 7번까지는 2. 6개
+    // 8번부터 19까지 3. 12개
+    // 20번부터 37번까지 4. 18개
+    int temp = 1;
+    for (int i = 0; i < N; i++)
+    {
+        temp += 6 * i;
+        if (N <= temp)
+        {
+            cout << (i + 1);
+            break;
+        }
+    }
+}
