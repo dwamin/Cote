@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    long long N;
+    cin >> N;
+    long long temp = 1; // 누적 방 개수
+    int i = 1;          // 층수
+    if (N == 1)
+    {
+        cout << 1;
+    }
+    else
+    {
+        while (temp < N)
+        {
+            temp += 6 * i;
+            i++;
+        }
+        cout << i;
+    }
+}
