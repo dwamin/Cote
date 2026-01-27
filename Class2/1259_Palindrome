@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string num;
+    bool flag;
+    while (true)
+    {
+        cin >> num;
+        if (num == "0")
+            break;
+        int len = num.length();
+        flag = 1;
+        for (int i = 0; i < len / 2; i++)
+        {
+
+            if (num[i] != num[len - i - 1])
+            {
+                flag = 0;
+            }
+        }
+        if (flag == 1)
+            cout << "yes" << endl;
+        else
+            cout << "no" << endl;
+    }
+    return 0;
+}
