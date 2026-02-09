@@ -23,18 +23,19 @@ int main()
             else
                 sum += 3 * val;
         }
-        for (int n = 0; n <= 9; n++)
-        {
-            int total = sum;
-            if ((num + 1) % 2 == 1)
-                total += n;
-            else
-                total += 3 * n;
-            if (total % 10 == 0)
-            {
-                cout << n << '\n';
-                break;
-            }
-        }
-        return 0;
     }
+    for (int n = 0; n <= 9; n++)
+    {
+        int total = sum;
+        if ((num + 1) % 2 == 1)
+            total += n;
+        else
+            total += 3 * n;
+        if (total % 10 == 0)
+        {
+            cout << n << '\n';
+            break;
+        }
+    }
+    return 0;
+}
