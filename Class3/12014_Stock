@@ -1,7 +1,18 @@
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 
+void solve(int caseNum){
+    int N, K;
+    cin>>N>>K;
+
+    vector<int> price(N);
+    for(int i=0;i<N;i++){
+        cin>>price[i];
+    }
+}
 int main()
 {
-    
+
 }
