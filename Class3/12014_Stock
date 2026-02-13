@@ -11,6 +11,10 @@ void solve(int caseNum){
     for(int i=0;i<N;i++){
         cin>>price[i];
     }
+    vector<int> dp(N, 1);
+    int totalMax=0;
+
+    
 }
 int main()
 {
