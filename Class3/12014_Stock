@@ -25,6 +25,7 @@ void solve(int caseNum)
                 dp[i] = max(dp[i], dp[j] + 1);
             }
         }
+        totalMax=max(totalMax, dp[i]);
     }
 }
 int main()
