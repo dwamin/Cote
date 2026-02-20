@@ -30,4 +30,5 @@ void solve(int caseNum)
 }
 int main()
 {
+    cout<<totalMax;
 }
