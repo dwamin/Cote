@@ -25,10 +25,19 @@ void solve(int caseNum)
                 dp[i] = max(dp[i], dp[j] + 1);
             }
         }
-        totalMax=max(totalMax, dp[i]);
+        totalMax = max(totalMax, dp[i]);
     }
+    cout<<caseNum<<'\n';
+    if(totalMax>=K) cout<<1<<'\n';
+    else cout<<0<<'\n';
 }
 int main()
 {
-    cout<<totalMax;
+    int T;
+    cin >> T;
+    for (int t = 0; t < T; t++)
+    {
+        solve(t);
+    }
+    return 0;
 }
