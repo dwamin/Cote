@@ -27,15 +27,17 @@ void solve(int caseNum)
         }
         totalMax = max(totalMax, dp[i]);
     }
-    cout<<caseNum<<'\n';
-    if(totalMax>=K) cout<<1<<'\n';
-    else cout<<0<<'\n';
+    cout << "Case #" << caseNum << '\n';
+    if (totalMax >= K)
+        cout << 1 << '\n';
+    else
+        cout << 0 << '\n';
 }
 int main()
 {
     int T;
     cin >> T;
-    for (int t = 0; t < T; t++)
+    for (int t = 1; t <= T; t++)
     {
         solve(t);
     }
