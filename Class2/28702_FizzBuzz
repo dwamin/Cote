@@ -10,6 +10,6 @@ int main()
     cin>>c;
 
     int next_num;
-    
+    cout<<next_num;
     
 }
