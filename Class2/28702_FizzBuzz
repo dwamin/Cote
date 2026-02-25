@@ -9,7 +9,7 @@ int main()
     cin>>b;
     cin>>c;
 
-    int next_num;
+    int next_num=0;
     cout<<next_num;
     
 }
