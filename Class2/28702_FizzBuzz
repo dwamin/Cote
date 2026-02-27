@@ -5,11 +5,15 @@ using namespace std;
 int main()
 {
     string a, b, c;
+    int next_num=0;
     cin>>a;
     cin>>b;
     cin>>c;
 
-    int next_num=0;
+    if(a[0]>='0' && a[0]<='9'){
+        next_num=stoi(a)+3;
+    }
+    
     cout<<next_num;
     
 }
