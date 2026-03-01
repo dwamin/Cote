@@ -16,6 +16,9 @@ int main()
     else if (b[0]>='0'&&b[0]<='9'){
         next_num=stoi(b)+2;
     }
+    else if (c[0]>='0'&&c[0]<='9'){
+        next_num=stoi(c)+1;
+    }
     cout<<next_num;
     
 }
