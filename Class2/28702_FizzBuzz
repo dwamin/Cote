@@ -5,20 +5,22 @@ using namespace std;
 int main()
 {
     string a, b, c;
-    int next_num=0;
-    cin>>a;
-    cin>>b;
-    cin>>c;
+    int next_num = 0;
+    cin >> a;
+    cin >> b;
+    cin >> c;
 
-    if(a[0]>='0' && a[0]<='9'){
-        next_num=stoi(a)+3;
+    if (a[0] >= '0' && a[0] <= '9')
+    {
+        next_num = stoi(a) + 3;
     }
-    else if (b[0]>='0'&&b[0]<='9'){
-        next_num=stoi(b)+2;
+    else if (b[0] >= '0' && b[0] <= '9')
+    {
+        next_num = stoi(b) + 2;
     }
-    else if (c[0]>='0'&&c[0]<='9'){
-        next_num=stoi(c)+1;
+    else if (c[0] >= '0' && c[0] <= '9')
+    {
+        next_num = stoi(c) + 1;
     }
-    cout<<next_num;
-    
+    cout << next_num;
 }
