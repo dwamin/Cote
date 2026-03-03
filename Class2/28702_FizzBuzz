@@ -22,5 +22,9 @@ int main()
     {
         next_num = stoi(c) + 1;
     }
+
+    if (next_num%3==0&&next_num%5==0){
+        cout<<"FizzBuzz"<<'\n';
+    }
     cout << next_num;
 }
