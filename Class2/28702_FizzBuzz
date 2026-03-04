@@ -26,5 +26,8 @@ int main()
     if (next_num%3==0&&next_num%5==0){
         cout<<"FizzBuzz"<<'\n';
     }
+    else if(next_num%3==0){
+        cout<<"Fizz"<<'\n';
+    }
     cout << next_num;
 }
