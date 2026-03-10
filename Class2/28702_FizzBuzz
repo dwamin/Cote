@@ -35,5 +35,8 @@ int main()
     {
         cout << "Buzz" << '\n';
     }
-    cout << next_num;
+    else
+    {
+        cout << next_num;
+    }
 }
